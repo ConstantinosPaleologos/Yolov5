@@ -456,10 +456,10 @@ def train(hyp, opt, device, tb_writer=None):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     #E:/Computer Science/python/research9-Yolo v5/yolov5-5.0
-    parser.add_argument('--weights', type=str, default='../weights/yolov5m.pt', help='initial weights path')
-    parser.add_argument('--cfg', type=str, default='../models/yolov5m_hat.yaml', help='model.yaml path')
-    parser.add_argument('--data', type=str, default='../data/voc_hat.yaml', help='data.yaml path')
-    parser.add_argument('--hyp', type=str, default='../data/hyp.scratch.yaml', help='hyperparameters path')
+    parser.add_argument('--weights', type=str, default='/content/sample_data/Yolov5/weights/yolov5m.pt', help='initial weights path')
+    parser.add_argument('--cfg', type=str, default='/content/sample_data/Yolov5/models/yolov5m_hat.yaml', help='model.yaml path')
+    parser.add_argument('--data', type=str, default='/content/sample_data/Yolov5/data/voc_hat.yaml', help='data.yaml path')
+    parser.add_argument('--hyp', type=str, default='/content/sample_data/Yolov5/data/hyp.scratch.yaml', help='hyperparameters path')
     parser.add_argument('--epochs', type=int, default=300)
     parser.add_argument('--batch-size', type=int, default=32, help='total batch size for all GPUs')
     parser.add_argument('--img-size', nargs='+', type=int, default=[640, 640], help='[train, test] image sizes')
